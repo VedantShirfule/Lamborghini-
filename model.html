@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: gold;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+        nav a:hover {
+            background-color: gold;
+            color: black;
+        }
+
+        .models-title {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .models {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .model-card {
+            background-color: #222;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .model-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .model-card h3 {
+            color: gold;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+        }
+
+     
+        @media (max-width: 768px) {
+            .models {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+   
+        @media (max-width: 480px) {
+            .models {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Lamborghini Models</h1>
+    <p>Explore Our Iconic Cars</p>
+</header>
+
+<nav>
+   <h1> <a href="home.html"> Home</a></h1> 
+<h1> <a href="model.html"> Model</a></h1>
+<h1> <a href="Gallery.html"> Gallery</a></h1> 
+ <h1> <a href="contact.html"> Contact</a></h1> 
+
+</nav>
+
+<section class="models-title">
+    <h2>Our Models</h2>
+    <p>Designed for power, luxury, and performance</p>
+</section>
+
+<section class="models">
+    <div class="model-card">
+        <img src="huracan.jpg" alt="Huracan">
+        <h3>Huracán</h3>
+        <p>V10 engine with breathtaking speed.</p>
+    </div>
+
+    <div class="model-card">
+        <img src="Aventador.jpg" alt="Aventador">
+        <h3>Aventador</h3>
+        <p>Iconic V12 supercar.</p>
+    </div>
+
+    <div class="model-card">
+        <img src="urus.jpg" alt="Urus">
+        <h3>Urus</h3>
+        <p>The world’s first Super SUV.</p>
+    </div>
+
+    <div class="model-card">
+        <img src="revuelto.jpg" alt="Revuelto">
+        <h3>Revuelto</h3>
+        <p>Hybrid V12 performance car.</p>
+    </div>
+
+    <div class="model-card">
+        <img src="Sian.jpg" alt="Sian">
+        <h3>Sián</h3>
+        <p>First Lamborghini hybrid supercar.</p>
+    </div>
+
+    <div class="model-card">
+        <img src="countach.jpg" alt="Countach">
+        <h3>Countach LPI 800-4</h3>
+        <p>Legend reborn with modern technology.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Lamborghini | Models Page</p>
+</footer>
+
+</body>
+</html>

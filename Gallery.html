@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: gold;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+        nav a:hover {
+            background-color: gold;
+            color: black;
+        }
+
+        .gallery-title {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+       
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+      
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Lamborghini Gallery</h1>
+    <p>Experience Power in Every Angle</p>
+</header>
+
+<nav><h1> <a href="home.html"> Home</a></h1> 
+<h1> <a href="model.html"> Model</a></h1>
+<h1> <a href="Gallery.html"> Gallery</a></h1> 
+ <h1> <a href="contact.html"> Contact</a></h1> 
+
+</nav>
+
+<section class="gallery-title">
+    <h2>Photo Gallery</h2>
+    <p>Explore our collection of Lamborghini masterpieces</p>
+</section>
+
+<section class="gallery">
+    <img src="masterpiece.jpg" alt="avendator">
+    <img src="silverhurracan.jpg" alt="Huracan">
+    <img src="yanko.jpg">

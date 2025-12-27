@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: gold;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: gold;
+    color: black;
+}
+
+
+.contact {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #222;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    text-align: center;
+    color: gold;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.field {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: gold;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d4af37;
+}
+
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Lamborghini</h1>
+    <p>Contact Us</p>
+</header>
+
+<nav>
+     <h1> <a href="home.html"> Home</a></h1> 
+<h1> <a href="model.html"> Model</a></h1>
+<h1> <a href="Gallery.html"> Gallery</a></h1> 
+ <h1> <a href="contact.html"> Contact</a></h1> 
+
+</nav>
+
+<section class="contact">
+    <h2>Get in Touch</h2>
+
+    <form>
+        <div class="row">
+            <div class="field">
+                <label>First Name</label>
+                <input type="text" placeholder="First name">
+            </div>
+            <div class="field">
+                <label>Last Name</label>
+                <input type="text" placeholder="Last name">
+            </div>
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="you@company.com">
+        </div>
+
+        <div class="field">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+91 00000 00000">
+        </div>
+
+        <div class="field">
+            <label>Message</label>
+            <textarea placeholder="Leave us a message..."></textarea>
+        </div>
+
+        <label>Services</label>
+        <div class="services">
+            <label><input type="checkbox"> Website Design</label>
+            <label><input type="checkbox"> Content Creation</label>
+            <label><input type="checkbox"> UX Design</label>
+            <label><input type="checkbox"> Strategy & Consulting</label>
+            <label><input type="checkbox"> User Research</label>
+            <label><input type="checkbox"> Other</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>Visit Again|© 2025 Lamborghini | Contact Page</p>
+</footer>
+
+</body>
+</html>
